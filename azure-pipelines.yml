@@ -41,8 +41,8 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'ayaj-test-api'  # Azure Service Connection adını yaz
+    azureSubscription: 'gamedelivery'  # Azure Service Connection adını yaz
     appType: 'webApp'
-    appName: 'ayajtestfrontend'                        # Azure'da oluşturduğun Web App adı
+    appName: 'gamedelivery'                        # Azure'da oluşturduğun Web App adı
     package: '$(Build.ArtifactStagingDirectory)/build.zip'
   displayName: 'Deploy to Azure Web App'
